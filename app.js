@@ -81,7 +81,7 @@ if (passw === "password") {
 }
 })
 // 9-masala
-const div9 = document.querySelector(".div9");
+/*const div9 = document.querySelector(".div9");
 const top = document.querySelector("#top")
 const bottom = document.querySelector("#botoom")
 const righ = document.querySelector("#righ")
@@ -97,7 +97,7 @@ righ && righ.addEventListener('click', function(){
 })
 left && left.addEventListener('click', function(){
     div9.style.marginleft = '10px'
-})
+})*/
 // 10-masala
 const img = document.querySelector("img");
 const random = document.querySelector("#random");
@@ -107,16 +107,18 @@ random && random.addEventListener('click', function(){
     img.setAttribute('src', images[random])
 })
 //11-masala
-const passw = document.querySelector("#password");
-const berk = document.querySelector("#berk");
-berk && berk.addEventListener('click', function (){
-if (passw === "password") {
-    passw .type = 'text';
-    this.textContent = 'yashirish'
-} else {
-    passw.type = 'password';
-    this.textContent = 'Parolni korsatish'
-}
+const paraf11 =document.querySelectorAll("#paraf11");
+const yaw11 = document.getElementById('yawirish11');
+const koriw11 = document.getElementById('korsatish11')
+yaw11 && yaw11.addEventListener('click', function (){
+    paraf11.forEach(function(para11) {
+        para11.style.display = 'none'
+    })
+})
+koriw11 && koriw11.addEventListener('click', function(){
+    paraf11.forEach(function(para11) {
+        para11.style.display = 'block'
+    })
 })
 // 12-masala
 const info = document.querySelector("#info");
